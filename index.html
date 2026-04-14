@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morphéa — Le sommeil réinventé</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-top-left">
+        <span class="loader-brand">MORPHÉA<sup>®</sup></span>
+        <span class="loader-tagline">Le sommeil<br>réinventé</span>
+      </div>
+      <div class="loader-center">
+        <span class="loader-product">MORPHÉA <span class="loader-product-accent">SLEEP</span></span>
+        <div class="loader-bar-wrap">
+          <div class="loader-bar"></div>
+        </div>
+        <span class="loader-sub">GUMMIES PREMIUM POUR UN SOMMEIL PROFOND</span>
+      </div>
+      <div class="loader-top-right">
+        <span class="loader-status">LOADING MORPHÉA EXPERIENCE</span>
+      </div>
+      <div class="loader-bottom-left">
+        <span class="loader-desc">Formulé à partir d'actifs naturels<br>pour un sommeil de qualité supérieure.</span>
+      </div>
+      <div class="loader-counter">
+        <span id="loader-num">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-left">
+      <a href="#" class="nav-logo">MORPHÉA<sup>®</sup></a>
+    </div>
+    <div class="nav-center">
+      <span class="nav-brand">MORPHÉA</span>
+    </div>
+    <div class="nav-right">
+      <a href="#cta-final" class="nav-action">Commander</a>
+    </div>
+  </nav>
+
+  <!-- SIDE LINKS -->
+  <div class="side-link side-left"><span>TIKTOK</span></div>
+  <div class="side-link side-right"><span>INSTAGRAM</span></div>
+
+  <!-- TOP TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>SOMMEIL PROFOND</span><span>·</span>
+      <span>FORMULE NATURELLE</span><span>·</span>
+      <span>MÉLATONINE VÉGÉTALE</span><span>·</span>
+      <span>FABRIQUÉ EN FRANCE</span><span>·</span>
+      <span>SOMMEIL PROFOND</span><span>·</span>
+      <span>FORMULE NATURELLE</span><span>·</span>
+      <span>MÉLATONINE VÉGÉTALE</span><span>·</span>
+      <span>FABRIQUÉ EN FRANCE</span><span>·</span>
+      <span>SOMMEIL PROFOND</span><span>·</span>
+      <span>FORMULE NATURELLE</span><span>·</span>
+      <span>MÉLATONINE VÉGÉTALE</span><span>·</span>
+      <span>FABRIQUÉ EN FRANCE</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- 3D CANVAS -->
+  <canvas id="three-canvas"></canvas>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="poster-section stack-section">
+    <div class="poster-bg hero-gradient"></div>
+    <div class="section-glow"></div>
+
+    <div class="poster-text pt-top-center">
+      <span class="mono-sm">LE SOMMEIL RÉINVENTÉ</span>
+      <span class="mono-sm dim">VOL. I</span>
+    </div>
+
+    <div class="poster-text pt-left-mid">
+      <p class="editorial-text">GUMMIES PREMIUM<br>POUR UN SOMMEIL PROFOND<br>NATUREL ET RÉPARATEUR</p>
+    </div>
+
+    <div class="poster-text pt-right-mid">
+      <p class="editorial-text">UN RITUEL NOCTURNE CONÇU<br>POUR CEUX QUI EXIGENT<br>LE MEILLEUR DE LEUR REPOS</p>
+    </div>
+
+    <div class="poster-text pt-bottom-center">
+      <p class="mono-sm dim">FORMULÉ À PARTIR D'ACTIFS NATURELS<br>POUR OFFRIR UN SOMMEIL DE QUALITÉ SUPÉRIEURE</p>
+    </div>
+
+    <div class="poster-text pt-bottom-left">
+      <span class="mono-sm">30 GUMMIES</span>
+    </div>
+
+    <div class="poster-text pt-bottom-right">
+      <span class="mono-sm">39,90€</span>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section id="story" class="poster-section stack-section">
+    <div class="poster-bg story-gradient"></div>
+    <div class="section-glow"></div>
+
+    <div class="poster-text pt-top-center">
+      <span class="mono-sm">01 — CONSTAT</span>
+    </div>
+
+    <div class="poster-text story-title-pos">
+      <h2 class="display-huge">VOUS<br>NE<br>DORMEZ<br>PLUS.</h2>
+    </div>
+
+    <div class="poster-text story-desc-pos">
+      <p class="body-text">73% des cadres supérieurs parisiens<br>souffrent de troubles du sommeil.<br><br>4.2 heures de vrai repos par nuit.<br>Le reste n'est que du bruit.</p>
+    </div>
+
+    <div class="poster-text pt-bottom-right">
+      <p class="mono-sm dim">VOTRE CORPS MÉRITE MIEUX<br>QU'UN SOMNIFÈRE.</p>
+    </div>
+
+    <a href="#cta-final" class="section-cta-btn">COMMANDER — 39,90€</a>
+  </section>
+
+  <!-- ============ RITUAL ============ -->
+  <section id="ritual" class="poster-section stack-section">
+    <div class="poster-bg ritual-gradient"></div>
+    <div class="section-glow"></div>
+
+    <div class="poster-text pt-top-center">
+      <span class="mono-sm">02 — PHILOSOPHIE</span>
+    </div>
+
+    <div class="poster-text ritual-title-pos">
+      <h2 class="display-statement">
+        PAS UN<br>COMPLÉMENT.<br>
+        <span class="accent-text">UN RITUEL.</span>
+      </h2>
+    </div>
+
+    <div class="poster-text ritual-desc-pos">
+      <p class="body-text">Chaque gummy est une promesse :<br>20 minutes pour s'endormir,<br>8 heures de profondeur,<br>un réveil net.</p>
+    </div>
+
+    <div class="poster-text pt-bottom-left">
+      <p class="mono-sm dim">MÉLATONINE · L-THÉANINE · GABA<br>MAGNÉSIUM · PASSIFLORE</p>
+    </div>
+
+    <div class="poster-text pt-bottom-right">
+      <span class="mono-sm dim">100% NATUREL · VEGAN · SANS OGM</span>
+    </div>
+
+    <a href="#cta-final" class="section-cta-btn">COMMANDER — 39,90€</a>
+  </section>
+
+  <!-- ============ BENEFITS — Horizontal scroll ============ -->
+  <section id="benefits" class="benefits-scroll-section">
+    <div class="poster-bg benefits-gradient"></div>
+    <div class="section-glow"></div>
+
+    <div class="benefits-track">
+      <div class="benefits-header">
+        <span class="mono-sm dim">03 — BÉNÉFICES</span>
+      </div>
+
+      <div class="benefits-slider">
+        <div class="benefit-slide">
+          <div class="benefit-content">
+            <span class="mono-sm dim">01 — 04</span>
+            <h3 class="display-benefit">ENDORMISSEMENT<br><span class="accent-text">EN 20 MINUTES</span></h3>
+            <p class="body-text">ChromaSync™ régule votre mélatonine<br>naturelle. Pas de chimie. Juste le signal<br>que votre corps attend.</p>
+            <p class="mono-sm dim" style="margin-top:20px;">CONÇU POUR UN ENDORMISSEMENT<br>RAPIDE ET NATUREL</p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <div class="benefit-content">
+            <span class="mono-sm dim">02 — 04</span>
+            <h3 class="display-benefit">8 HEURES<br><span class="accent-text">DE PROFONDEUR</span></h3>
+            <p class="body-text">Le complexe GABA + L-Théanine<br>maintient vos cycles de sommeil<br>profond et paradoxal. Toute la nuit.</p>
+            <p class="mono-sm dim" style="margin-top:20px;">CYCLES DE SOMMEIL OPTIMISÉS<br>TOUTE LA NUIT</p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <div class="benefit-content">
+            <span class="mono-sm dim">03 — 04</span>
+            <h3 class="display-benefit">RÉVEIL NET<br><span class="accent-text">ESPRIT CLAIR</span></h3>
+            <p class="body-text">Zéro brouillard. Zéro résidu.<br>Vous ouvrez les yeux à 6h,<br>lucide, chargé, prêt à<br>reprendre le contrôle.</p>
+            <p class="mono-sm dim" style="margin-top:20px;">AUCUN EFFET RÉSIDUEL<br>AU MATIN</p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <div class="benefit-content">
+            <span class="mono-sm dim">04 — 04</span>
+            <h3 class="display-benefit">NATUREL<br><span class="accent-text">SANS COMPROMIS</span></h3>
+            <p class="body-text">Mélatonine végétale, Magnésium<br>bisglycinate, Passiflore.<br>Vegan. Sans OGM. Sans gluten.<br>La pureté absolue.</p>
+            <p class="mono-sm dim" style="margin-top:20px;">INGRÉDIENTS DE GRADE<br>PHARMACEUTIQUE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefit-selector">
+        <div class="selector-card active" data-select="0">
+          <span class="selector-num">01</span>
+          <span class="selector-title">ENDORMISSEMENT</span>
+          <span class="selector-sub">EN 20 MINUTES</span>
+        </div>
+        <div class="selector-card" data-select="1">
+          <span class="selector-num">02</span>
+          <span class="selector-title">PROFONDEUR</span>
+          <span class="selector-sub">8 HEURES</span>
+        </div>
+        <div class="selector-card" data-select="2">
+          <span class="selector-num">03</span>
+          <span class="selector-title">RÉVEIL NET</span>
+          <span class="selector-sub">ESPRIT CLAIR</span>
+        </div>
+        <div class="selector-card" data-select="3">
+          <span class="selector-num">04</span>
+          <span class="selector-title">NATUREL</span>
+          <span class="selector-sub">SANS COMPROMIS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROOF — VICTORY SCREEN ============ -->
+  <section id="proof" class="poster-section">
+    <div class="poster-bg proof-gradient"></div>
+    <div class="section-glow"></div>
+
+    <canvas id="falling-gummies-canvas"></canvas>
+    <div class="victory-screen">
+      <div class="victory-header">
+        <span class="mono-sm dim">04 — RÉSULTATS</span>
+        <h2 class="victory-title">VICTOIRE<br><span class="accent-text">SUR L'INSOMNIE</span></h2>
+      </div>
+
+      <div class="victory-scoreboard">
+        <div class="victory-row">
+          <span class="victory-rank gold">1ST</span>
+          <div class="victory-stat-content">
+            <span class="victory-number" data-value="96">0</span><span class="victory-unit">%</span>
+            <span class="victory-label">TAUX DE SATISFACTION</span>
+          </div>
+          <div class="victory-bar"><div class="victory-fill" data-width="96"></div></div>
+        </div>
+
+        <div class="victory-row">
+          <span class="victory-rank silver">2ND</span>
+          <div class="victory-stat-content">
+            <span class="victory-number" data-value="47">0</span><span class="victory-unit">min</span>
+            <span class="victory-label">ENDORMISSEMENT PLUS RAPIDE</span>
+          </div>
+          <div class="victory-bar"><div class="victory-fill" data-width="78"></div></div>
+        </div>
+
+        <div class="victory-row">
+          <span class="victory-rank bronze">3RD</span>
+          <div class="victory-stat-content">
+            <span class="victory-number" data-value="2.3">0</span><span class="victory-unit">h</span>
+            <span class="victory-label">DE SOMMEIL PROFOND EN PLUS</span>
+          </div>
+          <div class="victory-bar"><div class="victory-fill" data-width="85"></div></div>
+        </div>
+      </div>
+
+      <div class="victory-quote">
+        <p>"Morphéa a changé ma vie en 3 jours."</p>
+        <cite>— Sophie C., CFO, Paris 8e</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="cta-final" class="cta-section stack-section">
+    <div class="cta-content">
+      <p class="mono-sm">REJOIGNEZ LE RITUEL</p>
+      <h2 class="cta-display">
+        RETROUVER<br>
+        <span class="cta-accent">LE SOMMEIL</span>
+      </h2>
+      <p class="cta-body">
+        NE SUBISSEZ PLUS VOS NUITS.<br>
+        COMMANDEZ MORPHÉA POUR UN SOMMEIL ENFIN RÉPARATEUR.
+      </p>
+      <p class="cta-price">39,90€</p>
+      <a href="#" class="cta-btn-final">COMMANDER MAINTENANT</a>
+      <div class="cta-reassurance">
+        <span>LIVRAISON GRATUITE</span>
+        <span>·</span>
+        <span>SATISFAIT OU REMBOURSÉ 30J</span>
+        <span>·</span>
+        <span>PAIEMENT SÉCURISÉ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inline CTA buttons are inside sections on mobile -->
+
+  <!-- FOOTER (dark, séparé) -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">MORPHÉA<sup>®</sup></span>
+      <div class="footer-links">
+        <a href="#">Science</a>
+        <a href="#">FAQ</a>
+        <a href="#">CGV</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>© 2026 Morphéa. Tous droits réservés.</span>
+      <span>Site par <strong>Horizon Visual Agency</strong></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/OBJLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/MTLLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="scene.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
