@@ -105,12 +105,12 @@ function getGummyState(mobile) {
 // Load OBJ
 let loaded = false;
 const mtlL = new THREE.MTLLoader();
-mtlL.setPath('12-gummy-bear/');
+mtlL.setPath('./'); // Pointeur corrigé
 mtlL.load('gummy.mtl', (mats) => {
   mats.preload();
   const objL = new THREE.OBJLoader();
   objL.setMaterials(mats);
-  objL.setPath('12-gummy-bear/');
+  objL.setPath('./'); // Pointeur corrigé
   objL.load('gummy.obj', (obj) => {
     obj.traverse((ch) => { if (ch.isMesh) ch.material = gummyMat; });
     const box = new THREE.Box3().setFromObject(obj);
